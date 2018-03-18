@@ -1,0 +1,284 @@
+@import url("fontawesome.min.css");
+
+html, body {
+	margin: 0;
+	padding: 0;
+	background-image: url('../../images/bg.jpg');
+	background-size: cover;
+    background-repeat: no-repeat;
+    font-family: "MyriadPro-Regular";
+}
+
+@font-face {
+	font-family: 'MyriadPro-Bold';
+	src: url("../fonts/MyriadPro-Bold.eot"); /* IE9 Compat Modes */
+	src: url("../fonts/MyriadPro-Bold.otf") format("opentype"), /* Open Type Font */
+	url("../fonts/MyriadPro-Bold.svg") format("svg"), /* Legacy iOS */
+	url("../fonts/MyriadPro-Bold.ttf") format("truetype"), 
+	url("../fonts/MyriadPro-Bold.woff") format("woff"), /* Modern Browsers */
+	url("../fonts/MyriadPro-Bold.woff2") format("woff2"); /* Modern Browsers */ 
+}
+
+@font-face {
+	font-family: 'MyriadPro-Regular';
+	src: url("../fonts/MyriadPro-Regular.eot"); /* IE9 Compat Modes */
+	src: url("../fonts/MyriadPro-Regular.otf") format("opentype"), /* Open Type Font */
+	url("../fonts/MyriadPro-Regular.svg") format("svg"), /* Legacy iOS */
+	url("../fonts/MyriadPro-Regular.ttf") format("truetype"), 
+	url("../fonts/MyriadPro-Regular.woff") format("woff"), /* Modern Browsers */
+	url("../fonts/MyriadPro-Regular.woff2") format("woff2"); /* Modern Browsers */ 
+}
+
+@font-face {
+	font-family: 'MyriadPro-It';
+	src: url("../fonts/MyriadPro-It.eot"); /* IE9 Compat Modes */
+	src: url("../fonts/MyriadPro-It.otf") format("opentype"), /* Open Type Font */
+	url("../fonts/MyriadPro-It.svg") format("svg"), /* Legacy iOS */
+	url("../fonts/MyriadPro-It.ttf") format("truetype"), 
+	url("../fonts/MyriadPro-It.woff") format("woff"), /* Modern Browsers */
+	url("../fonts/MyriadPro-It.woff2") format("woff2"); /* Modern Browsers */ 
+}
+
+.shadow {
+	 box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+p {
+	margin: 0;
+}
+
+.container {
+	width: 95%;
+	position: relative;
+}
+
+.page-wrapper {
+	position: relative;
+}
+/*write by mobile first*/
+ /*header*/
+.header-content {
+	background-image: url('../../images/banner.jpg');
+	background-repeat: no-repeat;
+	max-width: 100%;
+	background-size: cover;
+	background-position: center;
+}
+
+.des-profile {
+	padding: 0 1em;
+	text-align: center;
+	color: #DDD;
+}
+
+.common-text {
+	font-family: "MyriadPro-Regular";
+	font-size: 1em;
+}
+
+.bold-text {
+	font-size: 1em;
+	font-family: "MyriadPro-Bold";
+}
+
+/*main content*/
+
+.profile {
+	text-align: center;
+	padding: 1em;
+}
+
+.profile img {
+	width: 100%;
+	height: auto;
+	border-radius: 1.5em;
+}
+
+.des-profile p {
+	margin-bottom: 10px;
+	font-size: 1em;
+	font-family: "MyriadPro-It";
+}
+
+.des-profile h2 {
+	margin: 0;
+	font-size: 2em;
+    font-family: "MyriadPro-Bold";
+    
+}
+
+.info {
+	padding: 0 1em;
+	margin: 15px 0;
+	background-color: #FFF;
+}
+
+.heading-title {
+	padding: 15px 0 5px 0;
+	margin: 0;
+	margin-bottom: 0.25em;
+	font-size: 1.5em;
+	font-family: "MyriadPro-Bold";
+	text-align: center;
+	position: relative;
+}
+
+.heading-title:before {
+	content: '';
+	width: 20%;
+	height: 3px;
+	background-color: #2060A0;
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	transform: translate(-50%, -50%);
+}
+
+.info-item {
+	padding: 1em 0;
+}
+
+.info-item li {
+	display: table;
+}
+
+.info-item li span {
+	display: table-cell;
+	font-size: 1em;
+}
+
+.info-item li span:first-child {
+	width: 5em;
+}
+
+.info-item li span:last-child {
+	font-family: "MyriadPro-Bold";
+}
+
+.info-item li span:last-child a {
+	font-family: "MyriadPro-Regular";
+}
+
+.info-item {
+	padding: 0 1em 1em 1em;
+}
+
+.objective {
+	padding-right: 0;
+	padding-left: 0;
+}
+
+/*footer*/
+.footer-content {
+	background-color: #2060A0;
+	width: 100%;
+}
+
+.footer-content p {
+	text-align: center;
+	color: #DDD;
+	margin: 0;
+	padding: 0.25em 0;
+}
+
+.back-to-top {
+	position: absolute;
+    right: 15px;
+    bottom: 0;
+    cursor: pointer;
+    width: 3em;
+    height: 3em;
+    background-color: #2b2e31;
+}
+
+.back-to-top:before {
+	padding: 0.2em;
+    content: "\e093";
+    font-family: 'Glyphicons Halflings';
+    font-size: 2em;
+    text-align: center;
+    color: #FFF;
+}
+
+/*responsive for tablet, desktop and large desktop*/
+@media only screen and (min-width: 736px) {
+	.header-content {
+		display: table;
+		padding: 2em 0;
+	}
+	.header-content div {
+		display: table-cell;
+	}
+	.profile {
+		float: left;
+		padding: 0 1em;
+	}
+
+	.profile img {
+		width: 15em;
+	}
+
+	.des-profile {
+		text-align: left;
+	}
+
+	.heading-title {
+		text-align: left;
+	}
+
+	.heading-title:before {
+		width: 80px;
+		left: 0;
+		transform: translate(0,0);
+	}
+}
+
+@media only screen and (min-width: 992px) {
+	.header-content {
+		display: block;
+	}
+
+	.profile {
+		padding-left: 2em;
+	}
+
+	.des-profile p {
+		font-size: 1.5em;
+	}
+
+	.des-profile h2 {
+		font-size: 2.5em;
+	}
+
+	.heading-title {
+		font-size: 2.5em;
+	}
+
+	.common-text {
+		font-size: 1.5em;
+	}
+
+	.bold-text {
+		font-size: 1.5em;
+	}
+
+	.info-item li span {
+		font-size: 1.5em;
+	}
+
+	.info-item {
+		padding: 2em;
+	}
+
+	.objective {
+		padding-left: 1em;
+		padding-right: 1em;
+	}
+
+}
